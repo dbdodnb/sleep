@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>A world of dreams</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="files/bgloopedvid.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="nav">
+        <div class="menu">
+            <button class="open-btn" onClick="openPanel()" aria-label="Відкрити бічну панель">☰</button>
+        </div>
+        <div><h3>Світ снів</h3></div>
+    </div>
+    <div class="side-panel" id="sidePanel">
+        <button class="close-btn" onClick="closePanel()" aria-label="Закрити бічну панель">✖</button>
+        <div class="sideinfo">
+            <p>Version 2.3</p>
+            <p>Author: <a href="http://telegram.me/Mv_minor">@Mv_minor</a></p>
+        </div>
+    </div>
+    <div id="header" class="header wrapper">
+        <div class="header__info">
+            <h1>Почніть вивчати світ сновидінь прямо зараз.</h1>
+            <button class="button" onclick="fun()">Вперед!</button>
+        </div>
+    </div>
+    <div class="main wrapper" id="main">
+        <div class="main__topBlock">
+            <div class="topBlock__info">
+                <h1>Цей сайт — подорож у підсвідомість, яка розкриє нові грані мрій і таємниць, що криються за кожним сновидінням.</h1>
+                <p>Прокрутіть униз і відкрийте цілий світ незвіданого, де кожен розділ — новий погляд на загадки, що приховує ваш розум.</p>
+                <button class="back" onclick="fun2()">
+                    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+                    <span>Назад</span>
+                </button>
+            </div>
+            <div style="margin-right: 0;" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="files/swiper1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper7.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="main__info main__info1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui officia ipsam voluptate animi temporibus ab amet dolor dolores nesciunt sed, molestias vero? Eius nam, facilis quod incidunt fugit saepe?</p>
+            <div style="margin-right: 0;" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="files/swiper1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper7.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="main__info main__info2">
+            <div style="margin-left: 0;" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="files/swiper1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper7.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi dolor voluptatibus, iste, optio repellendus corrupti repellat nisi non fugit accusantium! Cupiditate incidunt facere placeat quas ipsam nostrum animi voluptate?</p>
+        </div>
+        <div data-aos="fade-up" class="main__info main__info3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae a ipsa veritatis illo eum distinctio exercitationem minima! Voluptas autem in, officia atque dolore voluptatem, expedita excepturi qui quam libero repudiandae.</p>
+            <div style="margin-right: 0;" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="files/swiper1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper7.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="main__info main__info4">
+            <div style="margin-left: 0;" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="files/swiper1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper7.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="files/swiper9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem molestiae odit modi laudantium ratione nihil impedit eius aspernatur quo atque? Officia debitis suscipit neque rerum soluta ipsum distinctio. Rerum, ullam.</p>
+        </div>
+    </div>
+    <div>
+        <button id="scrollTopBtn" onclick="scrollToTop()" aria-label="Scroll to top">⇡</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function openPanel() {
+            document.getElementById("sidePanel").classList.add("open");
+        }
+
+        function closePanel() {
+            document.getElementById("sidePanel").classList.remove("open");
+        }
+
+        window.onscroll = function() {
+            const scrollTopBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 2000) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        const video = document.getElementById('background-video');
+
+        let swiper = new Swiper(".mySwiper", {
+          grabCursor: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        });
+
+        function fun() {
+            document.getElementById('header').style.display = 'none'
+            document.getElementById('main').style.display = 'flex'
+            AOS.refresh()
+        }
+        function fun2() {
+            document.getElementById('header').style.display = 'flex'
+            document.getElementById('main').style.display = 'none'
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init()
+        });
+
+
+    </script>
+</body>
+</html>
